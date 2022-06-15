@@ -159,4 +159,6 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 5
 }
 
-STATIC_ROOT=os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+CSRF_TRUSTED_ORIGINS = ["https://library-management-by-sanket.herokuapp.com/"]
