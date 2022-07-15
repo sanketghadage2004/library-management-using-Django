@@ -1,1 +1,1 @@
-web: gunicorn demo.wsgi --log-file -
+web: waitress-serve --port=$PORT bookproject.wsgi:application
